@@ -37,7 +37,7 @@ background-image: url(../img/paulius-dragunas-cIxcxnwsnoI-unsplash.jpg);
 section{
     display: grid;
 grid-area: se;
-background-color: orange;
+background-color: rgb(249, 249, 249);
 }
 
 
@@ -66,5 +66,5 @@ background-color: hotpink;
 section{
     display: grid;
 grid-area: se;
-background-color: orange;
+background-color: rgb(232, 232, 231);
 }
