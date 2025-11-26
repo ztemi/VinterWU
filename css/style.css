@@ -31,9 +31,15 @@ background-color: aqua;
 main{
     display: grid;
 grid-area: ma;
-background-color: blue;
+background-image: url(../img/paulius-dragunas-cIxcxnwsnoI-unsplash.jpg);
 }
-
+main img{ height: 20vh;
+width: 10vw;
+display: inline-block;
+vertical-align: middle;
+position: relative;
+border-radius: 5px;
+}
 section{
     display: grid;
 grid-area: se;
@@ -59,6 +65,12 @@ background-color: hotpink;
     grid-template-areas:
         "he he  "
         "na na  "
-        "ma ma "
+        "se se "
         "fo fo "
+}
+
+section{
+    display: grid;
+grid-area: se;
+background-color: orange;
 }
