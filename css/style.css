@@ -14,6 +14,31 @@
         "fo fo fo"
 }
 
+#wrapper2 {
+    display: grid;
+    height: 280vh;
+    width: 100%;
+    
+    grid-template-rows: 200px 10vh 3fr 60px;
+    grid-template-columns: 10vw 3fr ;
+   column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas:
+        "he he  "
+        "na na  "
+        "se se "
+        "fo fo "
+}
+#wrapper3 {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+
+    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr ;
+}
+
+
 header {
 display: grid;
 grid-area: he;
@@ -25,9 +50,15 @@ nav{
 grid-area: na;
 background-color: aqua;
 }
-
-
-
+nav h2{
+display: flex;
+justify-content: space-evenly;
+}
+nav h3{
+display: flex;
+justify-content: space-evenly;
+}
+ nav a{ color: #27ae60;}
 main{
     display: grid;
 grid-area: ma;
@@ -35,10 +66,12 @@ background-image: url(../img/paulius-dragunas-cIxcxnwsnoI-unsplash.jpg);
 }
 
 section{
-    display: grid;
+    display: flex;
 grid-area: se;
 background-color: rgb(249, 249, 249);
+flex-direction: column;
 }
+section h2{ color: #27ae60;}
 
 
 footer{
@@ -47,24 +80,4 @@ grid-area: fo;
 background-color: hotpink;
 }
 
-#wrapper2 {
-    display: grid;
-    height: 100vh;
-    width: 100%;
-    
-    grid-template-rows: 55vw 1fr fr 60px;
-    grid-template-columns: 40vh 3fr ;
-   column-gap: 10px;
-    row-gap: 10px;
-    grid-template-areas:
-        "he he  "
-        "na na  "
-        "se se "
-        "fo fo "
-}
 
-section{
-    display: grid;
-grid-area: se;
-background-color: rgb(232, 232, 231);
-}
