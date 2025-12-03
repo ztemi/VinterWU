@@ -29,13 +29,21 @@
         "se se "
         "fo fo "
 }
-#wrapper3 {
+#wrapper3  {
     display: grid;
     height: 100vh;
     width: 100%;
+    background-color:#ffffff;
+    grid-template-rows: 65px 1fr 1fr 65px;
+    grid-template-columns: 45vh 1fr;
+   column-gap: 15px;
+    row-gap: 20px;
+    grid-template-areas:
+        "na na"
+        "as ma"
+        "as se"
+        "fo fo";
 
-    grid-template-rows: 1fr ;
-    grid-template-columns: 1fr ;
 }
 
 
@@ -70,9 +78,19 @@ section{
 grid-area: se;
 background-color: rgb(249, 249, 249);
 flex-direction: column;
+padding: 20px;
 }
 section h2{ color: #27ae60;}
-
+section img{
+    height: 20vh;
+    width: 10vw;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 10;
+    margin: 10px;
+    border-radius: 50px;
+}
 
 footer{
     display: grid;
