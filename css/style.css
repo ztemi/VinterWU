@@ -40,8 +40,8 @@
     row-gap: 20px;
     grid-template-areas:
         "na na"
-        "as ma"
-        "as se"
+        "se se"
+        "se se"
         "fo fo";
 
 }
@@ -52,6 +52,9 @@ display: grid;
 grid-area: he;
 background-color: rgb(103, 19, 206);
 }
+header h1{ display: flex;
+justify-content: space-evenly;
+}
 
 nav{
     display: grid;
@@ -61,6 +64,7 @@ background-color: aqua;
 nav h2{
 display: flex;
 justify-content: space-evenly;
+size: 21;
 }
 nav h3{
 display: flex;
@@ -82,14 +86,25 @@ padding: 20px;
 }
 section h2{ color: #27ae60;}
 section img{
+    display: flex;
+    flex-direction: row;
     height: 20vh;
     width: 10vw;
-    display: inline-block;
     vertical-align: middle;
     position: relative;
     z-index: 10;
     margin: 10px;
     border-radius: 50px;
+   
+}
+
+section#sen { 
+      display: flex;
+grid-area: se;
+background-color: rgb(249, 249, 249);
+flex-direction: row;
+padding: 20px;
+flex-wrap: wrap;
 }
 
 footer{
@@ -98,4 +113,6 @@ grid-area: fo;
 background-color: hotpink;
 }
 
+p{size: 13;}
 
+h1 h2 {font-style: t;}
