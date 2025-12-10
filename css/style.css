@@ -40,8 +40,8 @@
     row-gap: 20px;
     grid-template-areas:
         "na na"
-        "se se"
-        "se se"
+        "sen sen"
+        "sen sen"
         "fo fo";
 
 }
@@ -100,11 +100,14 @@ section img{
 
 section#sen { 
       display: flex;
-grid-area: se;
+grid-area: sen;
 background-color: rgb(249, 249, 249);
 flex-direction: row;
-padding: 20px;
+padding: 30px;
 flex-wrap: wrap;
+align-content: space-around;
+gap: 50px;
+justify-content: center;
 }
 
 footer{
