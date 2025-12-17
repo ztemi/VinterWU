@@ -5,8 +5,7 @@
     
     grid-template-rows: 80px 5vw 40vw 60px;
     grid-template-columns: 40vh 3fr 1fr;
-   column-gap: 10px;
-    row-gap: 10px;
+   
     grid-template-areas:
         "he he he  "
         "na na na "
@@ -21,8 +20,8 @@
     
     grid-template-rows: 200px 10vh 3fr 60px;
     grid-template-columns: 10vw 3fr ;
-   column-gap: 10px;
-    row-gap: 10px;
+   column-gap: 5px;
+    
     grid-template-areas:
         "he he  "
         "na na  "
@@ -50,7 +49,7 @@
 header {
 display: grid;
 grid-area: he;
-background-color: rgb(103, 19, 206);
+    background-color:#0198ea;
 }
 header h1{ display: flex;
 justify-content: space-evenly;
@@ -59,7 +58,8 @@ justify-content: space-evenly;
 nav{
     display: grid;
 grid-area: na;
-background-color: aqua;
+    background-color:#0198ea;
+align-content: center;
 }
 nav h2{
 display: flex;
@@ -74,13 +74,19 @@ justify-content: space-evenly;
 main{
     display: grid;
 grid-area: ma;
-background-image: url(../img/paulius-dragunas-cIxcxnwsnoI-unsplash.jpg);
+align-content: stretch;
+background-image: url(../img/hemsida.jpg);
+ z-index: 10;
+    margin: 10px;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
 }
 
 section{
     display: flex;
 grid-area: se;
-background-color: rgb(249, 249, 249);
+    background-color:#ffffff;
 flex-direction: column;
 padding: 20px;
 }
@@ -101,7 +107,7 @@ section img{
 section#sen { 
       display: flex;
 grid-area: sen;
-background-color: rgb(249, 249, 249);
+    background-color:#ffffff;
 flex-direction: row;
 padding: 30px;
 flex-wrap: wrap;
@@ -113,8 +119,10 @@ justify-content: center;
 footer{
     display: grid;
 grid-area: fo;
-background-color: hotpink;
-}
+   background-color: #0198ea;;}
+
+footer h2{display: flex;
+justify-content: center;}
 
 p{size: 13;}
 
