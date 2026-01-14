@@ -64,7 +64,7 @@ align-content: center;
 nav h2{
 display: flex;
 justify-content: space-evenly;
-size: 21;
+resize: 21;
 }
 nav h3{
 display: flex;
@@ -124,6 +124,6 @@ grid-area: fo;
 footer h2{display: flex;
 justify-content: center;}
 
-p{size: 13;}
+p{resize: 13;}
 
-h1 h2 {font-style: t;}
+h1 h2 {font-style: italic;}
